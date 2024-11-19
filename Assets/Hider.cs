@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class Hider : MonoBehaviour
 {
-    [Tooltip("Key to toggle visibility")]
-    [SerializeField] private KeyCode toggleKey = KeyCode.H;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
 
+    // Update is called once per frame
     void Update()
     {
-        // Incorrectly use SetActive without toggling properly
-        if (Input.GetKeyDown(toggleKey))
-        {
-            gameObject.SetActive(false); // Always hides, doesn't toggle
-        }
+        
     }
 }
