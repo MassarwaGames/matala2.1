@@ -11,8 +11,9 @@ public class Resizer : MonoBehaviour
 
     void Update()
     {
-        // Correctly calculate the range for PingPong
-        float scale = Mathf.PingPong(Time.time * sizeSpeed, maxSize - minSize) + minSize;
+        float scale = Mathf.PingPong(Time.time * sizeSpeed, maxSize) + minSize;
+        Debug.Log($"Scale value: {scale}"); // Debugging output
         transform.localScale = new Vector3(scale, scale, scale);
     }
+
 }
