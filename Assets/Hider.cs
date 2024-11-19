@@ -4,10 +4,13 @@ public class Hider : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [Tooltip("Key to toggle visibility")]
-    [SerializeField] private KeyCode toggleKey = KeyCode.H;
+    [SerializeField] KeyCode toggleKey = KeyCode.H;
+
+    Renderer objectRenderer;
     void Start()
     {
-        
+        objectRenderer = GetComponent<Renderer>();
+
     }
 
     // Update is called once per frame
@@ -15,8 +18,8 @@ public class Hider : MonoBehaviour
     {
         if (Input.GetKeyDown(toggleKey))
         {
-            // Properly toggle the active state
-            gameObject.SetActive(!gameObject.activeSelf);
+            
+            objectRenderer.enabled = !objectRenderer.enabled;
         }
     }
 }
