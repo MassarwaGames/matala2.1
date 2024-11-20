@@ -43,7 +43,6 @@ Each object in the scene has an assigned script that governs its behavior, and d
   - Indicates the type of behavior the object demonstrates (e.g., "Moving", "Rotating", "Oscillating").
   - Follows the object dynamically.
 
+### link to itch.io game page
+[Itch.io Page](https://blackeswadeh.itch.io/question1-game)
 ---
-
-
-[Itch.io Page](https://blackeswadeh.itch.io/question1-game) 
